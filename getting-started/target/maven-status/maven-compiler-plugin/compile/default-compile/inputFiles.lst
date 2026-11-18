@@ -1,0 +1,11 @@
+/workspaces/felfel/getting-started/src/main/java/org/wildfly/examples/AuthResource.java
+/workspaces/felfel/getting-started/src/main/java/org/wildfly/examples/ChatEndpoint.java
+/workspaces/felfel/getting-started/src/main/java/org/wildfly/examples/ChatMessageMDB.java
+/workspaces/felfel/getting-started/src/main/java/org/wildfly/examples/ChatPublisher.java
+/workspaces/felfel/getting-started/src/main/java/org/wildfly/examples/GettingStartedApplication.java
+/workspaces/felfel/getting-started/src/main/java/org/wildfly/examples/Message.java
+/workspaces/felfel/getting-started/src/main/java/org/wildfly/examples/MessageResource.java
+/workspaces/felfel/getting-started/src/main/java/org/wildfly/examples/MessageService.java
+/workspaces/felfel/getting-started/src/main/java/org/wildfly/examples/TestResource.java
+/workspaces/felfel/getting-started/src/main/java/org/wildfly/examples/User.java
+/workspaces/felfel/getting-started/src/main/java/org/wildfly/examples/UserService.java

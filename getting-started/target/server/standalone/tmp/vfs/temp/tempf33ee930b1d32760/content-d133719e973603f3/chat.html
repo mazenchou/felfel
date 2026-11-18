@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>MiniChat - Chat Room</title>
+    <style>
+        body { font-family: sans-serif; background: #f0f2f5; display: flex; justify-content: center; align-items: center; height: 100vh; margin: 0; }
+        .chat-container { background: white; width: 400px; height: 500px; border-radius: 10px; box-shadow: 0 4px 12px rgba(0,0,0,0.1); display: flex; flex-direction: column; }
+        .header { background: #007bff; color: white; padding: 15px; border-radius: 10px 10px 0 0; font-weight: bold; display: flex; justify-content: space-between; }
+        .header a { color: white; text-decoration: none; font-size: 14px; }
+        #chat-box { flex: 1; padding: 15px; overflow-y: auto; display: flex; flex-direction: column; gap: 10px; }
+        .message { padding: 8px 12px; border-radius: 8px; max-width: 80%; word-wrap: break-word; }
+        .message.my-message { background: #007bff; color: white; align-self: flex-end; }
+        .message.other-message { background: #e4e6eb; color: black; align-self: flex-start; }
+        .input-area { display: flex; padding: 15px; border-top: 1px solid #ddd; }
+        input { flex: 1; padding: 10px; border: 1px solid #ccc; border-radius: 5px; margin-right: 10px; }
+        button { padding: 10px 20px; background: #007bff; color: white; border: none; border-radius: 5px; cursor: pointer; }
+    </style>
+</head>
+<body>
+
+<div class="chat-container">
+    <div class="header">
+        <span id="header-title">MiniChat</span>
+        <a href="/">Logout</a>
+    </div>
+    <div id="chat-box"></div>
+    <div class="input-area">
+        <input type="text" id="message-input" placeholder="Type a message..." onkeypress="handleKeyPress(event)">
+        <button onclick="sendMessage()">Send</button>
+    </div>
+</div>
+
+<script>
+    // 1. Get username from URL
+    const urlParams = new URLSearchParams(window.location.search);
+    const username = urlParams.get('username') || 'Anonymous';
+    document.getElementById('header-title').innerText = `Logged in as ${username}`;
+
+    // 2. Determine protocol (wss for HTTPS, ws for HTTP)
+    const wsProtocol = window.location.protocol === 'https:' ? 'wss://' : 'ws://';
+    const wsUrl = `${wsProtocol}${window.location.host}/chat`;
+    
+    let ws;
+
+    // 3. Try to connect
+    try {
+        ws = new WebSocket(wsUrl);
+        
+        ws.onopen = function() {
+            console.log("VERSION 2: WebSocket connected successfully.");
+        };
+
+        ws.onmessage = function(event) {
+            const chatBox = document.getElementById('chat-box');
+            const msgDiv = document.createElement('div');
+            
+            // Check if the message is from me
+            const isMe = event.data.startsWith(username + ":");
+            msgDiv.className = `message ${isMe ? 'my-message' : 'other-message'}`;
+            msgDiv.innerText = event.data;
+            
+            chatBox.appendChild(msgDiv);
+            chatBox.scrollTop = chatBox.scrollHeight; // Auto-scroll
+        };
+
+        ws.onerror = function(error) {
+            console.error("WebSocket Error:", error);
+        };
+
+    } catch (e) {
+        console.error("Fatal WebSocket Error:", e);
+    }
+
+    // 4. Send message function
+    function sendMessage() {
+        const input = document.getElementById('message-input');
+        if (input.value.trim() !== "") {
+            if (typeof ws !== 'undefined' && ws.readyState === WebSocket.OPEN) {
+                ws.send(username + ": " + input.value);
+                input.value = '';
+            } else {
+                alert("Not connected to server. Please refresh.");
+            }
+        }
+    }
+
+    function handleKeyPress(event) {
+        if (event.key === 'Enter') {
+            sendMessage();
+        }
+    }
+
+    // 5. Load chat history from database
+    fetch('/hello/messages')
+        .then(response => response.json())
+        .then(messages => {
+            const chatBox = document.getElementById('chat-box');
+            messages.forEach(msg => {
+                const msgDiv = document.createElement('div');
+                const isMe = msg.sender === username;
+                msgDiv.className = `message ${isMe ? 'my-message' : 'other-message'}`;
+                msgDiv.innerText = msg.sender + ": " + msg.content;
+                chatBox.appendChild(msgDiv);
+            });
+            chatBox.scrollTop = chatBox.scrollHeight;
+        })
+        .catch(err => console.log("Could not load history:", err));
+</script>
+
+</body>
+</html>

@@ -1,0 +1,11 @@
+org/wildfly/examples/MessageService.class
+org/wildfly/examples/Message.class
+org/wildfly/examples/TestResource.class
+org/wildfly/examples/ChatPublisher.class
+org/wildfly/examples/ChatEndpoint.class
+org/wildfly/examples/GettingStartedApplication.class
+org/wildfly/examples/ChatMessageMDB.class
+org/wildfly/examples/MessageResource.class
+org/wildfly/examples/AuthResource.class
+org/wildfly/examples/UserService.class
+org/wildfly/examples/User.class

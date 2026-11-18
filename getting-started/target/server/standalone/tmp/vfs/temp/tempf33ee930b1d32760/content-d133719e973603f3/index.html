@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MiniChat - Login</title>
+    <style>
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background-color: #f0f2f5; display: flex; justify-content: center; align-items: center; height: 100vh; margin: 0; }
+        .container { background: white; padding: 30px; border-radius: 10px; box-shadow: 0 4px 12px rgba(0,0,0,0.1); width: 300px; }
+        h2 { text-align: center; color: #333; }
+        input { width: 100%; padding: 10px; margin: 10px 0; border: 1px solid #ccc; border-radius: 5px; box-sizing: border-box; }
+        button { width: 100%; padding: 10px; background-color: #007bff; color: white; border: none; border-radius: 5px; cursor: pointer; font-size: 16px; margin-top: 10px; }
+        button:hover { background-color: #0056b3; }
+        .toggle-link { text-align: center; display: block; margin-top: 15px; color: #007bff; cursor: pointer; text-decoration: none; font-size: 14px; }
+        #message { text-align: center; margin-top: 15px; font-size: 14px; font-weight: bold; }
+        .success { color: green; }
+        .error { color: red; }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h2 id="form-title">Login</h2>
+    
+    <input type="text" id="username" placeholder="Username" required>
+    <input type="password" id="password" placeholder="Password" required>
+    
+    <button id="submit-btn" onclick="submitForm()">Login</button>
+    
+    <a class="toggle-link" id="toggle-link" onclick="toggleMode()">Don't have an account? Register</a>
+    
+    <div id="message"></div>
+</div>
+
+<script>
+    let isLoginMode = true;
+
+    function toggleMode() {
+        isLoginMode = !isLoginMode;
+        document.getElementById('form-title').innerText = isLoginMode ? 'Login' : 'Register';
+        document.getElementById('submit-btn').innerText = isLoginMode ? 'Login' : 'Register';
+        document.getElementById('toggle-link').innerText = isLoginMode ? "Don't have an account? Register" : "Already have an account? Login";
+        document.getElementById('message').innerText = '';
+    }
+
+    async function submitForm() {
+        const username = document.getElementById('username').value;
+        const password = document.getElementById('password').value;
+        const messageDiv = document.getElementById('message');
+
+        if (!username || !password) {
+            messageDiv.innerText = "Please fill all fields";
+            messageDiv.className = "error";
+            return;
+        }
+
+        const endpoint = isLoginMode ? '/hello/auth/login' : '/hello/auth/register';
+        
+        try {
+            const response = await fetch(endpoint, {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({ username, password })
+            });
+
+            const text = await response.text();
+
+            if (response.ok) {
+                messageDiv.innerText = text;
+                messageDiv.className = "success";
+                if (isLoginMode) {
+                    setTimeout(() => { 
+                        window.location.href = `/chat.html?username=${username}`; 
+                        }, 1000);
+                }
+            } else {
+                messageDiv.innerText = text;
+                messageDiv.className = "error";
+            }
+        } catch (error) {
+            messageDiv.innerText = "Server error. Check connection.";
+            messageDiv.className = "error";
+        }
+    }
+</script>
+
+</body>
+</html>

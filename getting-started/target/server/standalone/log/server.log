@@ -1,0 +1,205 @@
+2026-11-18 12:08:07,604 INFO  [org.jboss.modules] (main) JBoss Modules version 2.1.6.Final
+2026-11-18 12:08:08,974 INFO  [org.jboss.msc] (main) JBoss MSC version 1.5.6.Final
+2026-11-18 12:08:09,128 INFO  [org.jboss.as] (MSC service thread 1-2) WFLYSRV0049: WildFly 42.0.0.Final (WildFly Core 34.0.0.Final) starting
+2026-11-18 12:08:09,130 DEBUG [org.jboss.as.config] (MSC service thread 1-2) Configured system properties:
+	[Standalone] = 
+	file.encoding = UTF-8
+	file.separator = /
+	java.awt.headless = true
+	java.class.path = /workspaces/felfel/getting-started/target/server/jboss-modules.jar
+	java.class.version = 69.0
+	java.home = /usr/local/sdkman/candidates/java/25.0.5.0+2-ms
+	java.io.tmpdir = /tmp
+	java.library.path = /usr/java/packages/lib:/usr/lib64:/lib64:/lib:/usr/lib
+	java.net.preferIPv4Stack = true
+	java.runtime.name = OpenJDK Runtime Environment
+	java.runtime.version = 25.0.5.0.2+1-LTS
+	java.specification.name = Java Platform API Specification
+	java.specification.vendor = Oracle Corporation
+	java.specification.version = 25
+	java.util.logging.manager = org.jboss.logmanager.LogManager
+	java.vendor = Microsoft
+	java.vendor.url = https://www.microsoft.com
+	java.vendor.url.bug = https://github.com/microsoft/openjdk/issues
+	java.vendor.version = Microsoft-15804669
+	java.version = 25.0.5.0.2
+	java.version.date = 2026-10-22
+	java.vm.compressedOopsMode = 32-bit
+	java.vm.info = mixed mode, sharing
+	java.vm.name = OpenJDK 64-Bit Server VM
+	java.vm.specification.name = Java Virtual Machine Specification
+	java.vm.specification.vendor = Oracle Corporation
+	java.vm.specification.version = 25
+	java.vm.vendor = Microsoft
+	java.vm.version = 25.0.5.0.2+1-LTS
+	javax.management.builder.initial = org.jboss.as.jmx.PluggableMBeanServerBuilder
+	jboss.home.dir = /workspaces/felfel/getting-started/target/server
+	jboss.host.name = codespaces-c574db
+	jboss.modules.system.pkgs = org.jboss.byteman
+	jboss.node.name = codespaces-c574db
+	jboss.qualified.host.name = codespaces-c574db
+	jboss.server.base.dir = /workspaces/felfel/getting-started/target/server/standalone
+	jboss.server.config.dir = /workspaces/felfel/getting-started/target/server/standalone/configuration
+	jboss.server.data.dir = /workspaces/felfel/getting-started/target/server/standalone/data
+	jboss.server.log.dir = /workspaces/felfel/getting-started/target/server/standalone/log
+	jboss.server.name = codespaces-c574db
+	jboss.server.persist.config = true
+	jboss.server.temp.dir = /workspaces/felfel/getting-started/target/server/standalone/tmp
+	jboss.threads.eqe.statistics = true
+	jdk.debug = release
+	line.separator = 
+
+	logging.configuration = file:/workspaces/felfel/getting-started/target/server/standalone/configuration/logging.properties
+	module.path = /workspaces/felfel/getting-started/target/server/modules
+	native.encoding = UTF-8
+	org.jboss.boot.log.file = /workspaces/felfel/getting-started/target/server/standalone/log/server.log
+	org.jboss.resolver.warning = true
+	os.arch = amd64
+	os.name = Linux
+	os.version = 6.8.0-1070-azure
+	path.separator = :
+	stderr.encoding = UTF-8
+	stdin.encoding = UTF-8
+	stdout.encoding = UTF-8
+	sun.arch.data.model = 64
+	sun.boot.library.path = /usr/local/sdkman/candidates/java/25.0.5.0+2-ms/lib
+	sun.cpu.endian = little
+	sun.io.unicode.encoding = UnicodeLittle
+	sun.java.command = /workspaces/felfel/getting-started/target/server/jboss-modules.jar -mp /workspaces/felfel/getting-started/target/server/modules org.jboss.as.standalone
+	sun.java.launcher = SUN_STANDARD
+	sun.jnu.encoding = UTF-8
+	sun.management.compiler = HotSpot 64-Bit Tiered Compilers
+	user.dir = /workspaces/felfel/getting-started
+	user.home = /home/codespace
+	user.language = en
+	user.name = codespace
+	user.timezone = Etc/UTC
+2026-11-18 12:08:09,133 DEBUG [org.jboss.as.config] (MSC service thread 1-2) VM Arguments: -D[Standalone] -Xms64m -Xmx512m -Djava.net.preferIPv4Stack=true -Djava.awt.headless=true -Djboss.modules.system.pkgs=org.jboss.byteman --add-exports=java.base/sun.nio.ch=ALL-UNNAMED --add-exports=jdk.unsupported/sun.reflect=ALL-UNNAMED --add-exports=jdk.unsupported/sun.misc=ALL-UNNAMED --add-modules=java.se --add-exports=java.desktop/sun.awt=ALL-UNNAMED --add-exports=java.naming/com.sun.jndi.ldap=ALL-UNNAMED --add-exports=java.naming/com.sun.jndi.url.ldap=ALL-UNNAMED --add-exports=java.naming/com.sun.jndi.url.ldaps=ALL-UNNAMED --add-exports=jdk.naming.dns/com.sun.jndi.dns=ALL-UNNAMED --add-opens=java.base/java.lang=ALL-UNNAMED --add-opens=java.base/java.lang.invoke=ALL-UNNAMED --add-opens=java.base/java.lang.reflect=ALL-UNNAMED --add-opens=java.base/java.io=ALL-UNNAMED --add-opens=java.base/java.net=ALL-UNNAMED --add-opens=java.base/java.security=ALL-UNNAMED --add-opens=java.base/java.util=ALL-UNNAMED --add-opens=java.base/java.util.concurrent=ALL-UNNAMED --add-opens=java.management/javax.management=ALL-UNNAMED --add-opens=java.naming/javax.naming=ALL-UNNAMED --add-modules=java.se -Djboss.home.dir=/workspaces/felfel/getting-started/target/server -Djboss.server.base.dir=/workspaces/felfel/getting-started/target/server/standalone -Djboss.server.log.dir=/workspaces/felfel/getting-started/target/server/standalone/log -Djboss.server.config.dir=/workspaces/felfel/getting-started/target/server/standalone/configuration -Dorg.jboss.boot.log.file=/workspaces/felfel/getting-started/target/server/standalone/log/server.log -Dlogging.configuration=file:/workspaces/felfel/getting-started/target/server/standalone/configuration/logging.properties 
+2026-11-18 12:08:10,484 INFO  [org.wildfly.security] (Controller Boot Thread) ELY00001: WildFly Elytron version 2.9.4.Final
+2026-11-18 12:08:11,369 INFO  [org.jboss.as.repository] (ServerService Thread Pool -- 3) WFLYDR0001: Content added at location /workspaces/felfel/getting-started/target/server/standalone/data/content/94/e29e72b304fcbc89d0907033a36e2a3b8c491d/content
+2026-11-18 12:08:11,407 INFO  [org.jboss.as.server] (Controller Boot Thread) WFLYSRV0039: Creating http management service using socket-binding (management-http)
+2026-11-18 12:08:11,426 INFO  [org.xnio] (MSC service thread 1-3) XNIO version 3.8.16.Final
+2026-11-18 12:08:11,442 INFO  [org.xnio.nio] (MSC service thread 1-3) XNIO NIO Implementation Version 3.8.16.Final
+2026-11-18 12:08:11,536 INFO  [org.jboss.as.jaxrs] (ServerService Thread Pool -- 39) WFLYRS0016: RESTEasy version 7.0.5.Final
+2026-11-18 12:08:11,533 INFO  [org.jboss.as.clustering.infinispan] (ServerService Thread Pool -- 37) WFLYCLINF0001: Activating Infinispan subsystem.
+2026-11-18 12:08:11,554 INFO  [org.jboss.as.naming] (ServerService Thread Pool -- 44) WFLYNAM0001: Activating Naming Subsystem
+2026-11-18 12:08:11,554 INFO  [org.wildfly.extension.io] (ServerService Thread Pool -- 38) WFLYIO001: Worker 'default' has auto-configured to 4 IO threads with 32 max task threads based on your 2 available processors
+2026-11-18 12:08:11,566 INFO  [org.jboss.remoting] (MSC service thread 1-4) JBoss Remoting version 5.0.32.Final
+2026-11-18 12:08:11,579 WARN  [org.jboss.as.txn] (ServerService Thread Pool -- 48) WFLYTX0013: The node-identifier attribute on the /subsystem=transactions is set to the default value. This is a danger for environments running multiple servers. Please make sure the attribute value is unique.
+2026-11-18 12:08:11,631 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-3) WFLYSRV0027: Starting deployment of "ROOT.war" (runtime-name: "ROOT.war")
+2026-11-18 12:08:11,643 INFO  [org.jboss.as.connector] (MSC service thread 1-4) WFLYJCA0009: Starting Jakarta Connectors Subsystem (WildFly/IronJacamar 3.0.22.Final)
+2026-11-18 12:08:11,719 INFO  [org.jboss.as.naming] (MSC service thread 1-2) WFLYNAM0003: Starting Naming Service
+2026-11-18 12:08:11,924 WARN  [org.wildfly.extension.elytron] (MSC service thread 1-3) WFLYELY00023: KeyStore file '/workspaces/felfel/getting-started/target/server/standalone/configuration/application.keystore' does not exist. Used blank.
+2026-11-18 12:08:11,957 INFO  [org.jboss.as.ejb3] (MSC service thread 1-3) WFLYEJB0482: Strict pool mdb-strict-max-pool is using a max instance size of 8 (per class), which is derived from the number of CPUs on this host.
+2026-11-18 12:08:11,962 INFO  [org.jboss.as.ejb3] (MSC service thread 1-4) WFLYEJB0481: Strict pool slsb-strict-max-pool is using a max instance size of 32 (per class), which is derived from thread worker pool sizing.
+2026-11-18 12:08:11,973 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-3) WFLYUT0003: Undertow 2.4.4.Final starting
+2026-11-18 12:08:11,976 WARN  [org.wildfly.extension.elytron] (MSC service thread 1-3) WFLYELY01084: KeyStore /workspaces/felfel/getting-started/target/server/standalone/configuration/application.keystore not found, it will be auto-generated on first use with a self-signed certificate for host localhost
+2026-11-18 12:08:12,007 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 49) WFLYUT0112: The value 'require-host-http11' attribute in the '/subsystem=undertow/server=default-server/http-listener=default' resource is 'false', which will be ignored. The server now always enforces the RFC 9112 requirement that HTTP/1.1 request messages include a Host header.
+2026-11-18 12:08:12,440 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-5) WFLYUT0012: Started server default-server.
+2026-11-18 12:08:12,443 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-5) Queuing requests.
+2026-11-18 12:08:12,444 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-5) WFLYUT0018: Host default-host starting
+2026-11-18 12:08:12,527 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-5) WFLYUT0006: Undertow HTTP listener default listening on 127.0.0.1:8080
+2026-11-18 12:08:12,827 INFO  [org.jboss.as.server.deployment.scanner] (MSC service thread 1-3) WFLYDS0013: Started FileSystemDeploymentService for directory /workspaces/felfel/getting-started/target/server/standalone/deployments
+2026-11-18 12:08:12,945 INFO  [org.wildfly.extension.messaging-activemq] (MSC service thread 1-5) WFLYMSGAMQ0075: AIO wasn't located on this platform, it will fall back to using pure Java NIO. Your platform is Linux, install LibAIO to enable the AIO journal and achieve optimal performance.
+2026-11-18 12:08:13,363 INFO  [org.apache.activemq.artemis.core.server] (ServerService Thread Pool -- 53) AMQ221000: Primary message broker is starting with configuration Broker Configuration (clustered=false,journalDirectory=/workspaces/felfel/getting-started/target/server/standalone/data/activemq/journal,bindingsDirectory=/workspaces/felfel/getting-started/target/server/standalone/data/activemq/bindings,largeMessagesDirectory=/workspaces/felfel/getting-started/target/server/standalone/data/activemq/largemessages,pagingDirectory=/workspaces/felfel/getting-started/target/server/standalone/data/activemq/paging)
+2026-11-18 12:08:13,571 INFO  [org.apache.activemq.artemis.core.server] (ServerService Thread Pool -- 53) AMQ221013: Using NIO Journal
+2026-11-18 12:08:14,073 INFO  [org.apache.activemq.artemis.core.server] (ServerService Thread Pool -- 53) AMQ221043: Protocol module found: [artemis-server]. Adding protocol support for: CORE
+2026-11-18 12:08:14,117 INFO  [org.infinispan.CONTAINER] (ServerService Thread Pool -- 52) ISPN000974: Virtual threads support: unavailable
+2026-11-18 12:08:14,308 INFO  [org.apache.activemq.artemis.core.server] (ServerService Thread Pool -- 53) AMQ221034: Waiting indefinitely to obtain primary lock
+2026-11-18 12:08:14,309 INFO  [org.apache.activemq.artemis.core.server] (ServerService Thread Pool -- 53) AMQ221035: Primary Server Obtained primary lock
+2026-11-18 12:08:14,530 INFO  [org.infinispan.CONTAINER] (ServerService Thread Pool -- 52) ISPN000556: Starting user marshaller 'org.wildfly.clustering.cache.infinispan.marshalling.UserMarshaller'
+2026-11-18 12:08:15,270 INFO  [org.apache.activemq.artemis.core.server] (ServerService Thread Pool -- 53) AMQ221003: Deploying ANYCAST queue jms.queue.ExpiryQueue on address jms.queue.ExpiryQueue
+2026-11-18 12:08:15,390 INFO  [org.infinispan.CONTAINER] (ServerService Thread Pool -- 54) ISPN000556: Starting user marshaller 'org.wildfly.clustering.cache.infinispan.marshalling.UserMarshaller'
+2026-11-18 12:08:15,541 INFO  [org.apache.activemq.artemis.core.server] (ServerService Thread Pool -- 53) AMQ221003: Deploying ANYCAST queue jms.queue.DLQ on address jms.queue.DLQ
+2026-11-18 12:08:15,565 INFO  [org.wildfly.extension.messaging-activemq] (MSC service thread 1-3) WFLYMSGAMQ0016: Registered HTTP upgrade for activemq-remoting protocol handled by http-acceptor-throughput acceptor
+2026-11-18 12:08:15,565 INFO  [org.wildfly.extension.messaging-activemq] (MSC service thread 1-5) WFLYMSGAMQ0016: Registered HTTP upgrade for activemq-remoting protocol handled by http-acceptor acceptor
+2026-11-18 12:08:15,567 INFO  [org.wildfly.extension.messaging-activemq] (MSC service thread 1-5) WFLYMSGAMQ0016: Registered HTTP upgrade for activemq-remoting protocol handled by http-acceptor-throughput acceptor
+2026-11-18 12:08:15,569 INFO  [org.wildfly.extension.messaging-activemq] (MSC service thread 1-3) WFLYMSGAMQ0016: Registered HTTP upgrade for activemq-remoting protocol handled by http-acceptor acceptor
+2026-11-18 12:08:15,997 INFO  [org.jboss.as.jpa] (MSC service thread 1-4) WFLYJPA0002: Read persistence.xml for minichatPU
+2026-11-18 12:08:16,115 INFO  [org.apache.activemq.artemis.core.server] (ServerService Thread Pool -- 53) AMQ221007: Server is now active
+2026-11-18 12:08:16,118 INFO  [org.apache.activemq.artemis.core.server] (ServerService Thread Pool -- 53) AMQ221001: Apache Artemis Message Broker version 2.57.0 [default, nodeID=ba9d3017-e348-11f1-92d1-7ced8d153d06] 
+2026-11-18 12:08:16,156 INFO  [org.wildfly.extension.messaging-activemq] (ServerService Thread Pool -- 51) WFLYMSGAMQ0002: Bound messaging object to jndi name java:/ConnectionFactory
+2026-11-18 12:08:16,219 INFO  [org.wildfly.extension.messaging-activemq] (ServerService Thread Pool -- 56) WFLYMSGAMQ0002: Bound messaging object to jndi name java:jboss/exported/jms/RemoteConnectionFactory
+2026-11-18 12:08:16,288 INFO  [org.jipijapa] (MSC service thread 1-5) JIPIORMV7020260: Second level cache enabled for ROOT.war#minichatPU
+2026-11-18 12:08:16,355 INFO  [org.jboss.as.jpa] (ServerService Thread Pool -- 52) WFLYJPA0010: Starting Persistence Unit (phase 1 of 2) Service 'ROOT.war#minichatPU'
+2026-11-18 12:08:16,366 INFO  [org.jboss.weld.deployer] (MSC service thread 1-4) WFLYWELD0003: Processing weld deployment ROOT.war
+2026-11-18 12:08:16,385 INFO  [org.hibernate.orm.jpa] (ServerService Thread Pool -- 52) HHH008540: Processing PersistenceUnitInfo [name: minichatPU]
+2026-11-18 12:08:16,423 INFO  [org.jboss.as.connector.deployment] (MSC service thread 1-2) WFLYJCA0007: Registered connection factory java:/JmsXA
+2026-11-18 12:08:16,619 INFO  [org.apache.activemq.artemis.ra.ActiveMQRALogger] (MSC service thread 1-2) AMQ151007: Resource adaptor started
+2026-11-18 12:08:16,619 INFO  [org.jboss.as.connector.services.resourceadapters.ResourceAdapterActivatorService$ResourceAdapterActivator] (MSC service thread 1-2) IJ020002: Deployed: file://RaActivatoractivemq-ra
+2026-11-18 12:08:16,631 INFO  [org.jboss.as.connector.deployment] (MSC service thread 1-2) WFLYJCA0002: Bound Jakarta Connectors ConnectionFactory [java:/JmsXA]
+2026-11-18 12:08:16,634 INFO  [org.jboss.as.connector.deployment] (MSC service thread 1-5) WFLYJCA0118: Binding connection factory named java:/JmsXA to alias java:jboss/DefaultJMSConnectionFactory
+2026-11-18 12:08:16,634 INFO  [org.hibernate.validator.internal.util.Version] (MSC service thread 1-4) HV000001: Hibernate Validator 9.1.1.Final
+2026-11-18 12:08:16,654 INFO  [org.hibernate.orm.core] (ServerService Thread Pool -- 52) HHH000001: Hibernate ORM core version 7.4.13.Final
+2026-11-18 12:08:16,720 INFO  [org.hibernate.orm.cache] (ServerService Thread Pool -- 52) HHH90001028: Second-level cache region factory [org.infinispan.hibernate.cache.v6.InfinispanRegionFactory]
+2026-11-18 12:08:17,122 INFO  [org.hibernate.envers.boot.internal.EnversServiceImpl] (ServerService Thread Pool -- 52) Envers integration enabled? : true
+2026-11-18 12:08:17,217 INFO  [org.wildfly.extension.messaging-activemq] (MSC service thread 1-4) WFLYMSGAMQ0002: Bound messaging object to jndi name java:/jms/topic/ChatTopic
+2026-11-18 12:08:17,221 INFO  [org.jipijapa] (MSC service thread 1-5) JIPIORMV7020260: Second level cache enabled for ROOT.war#minichatPU
+2026-11-18 12:08:17,268 INFO  [org.jboss.as.ejb3] (MSC service thread 1-4) WFLYEJB0493: Jakarta Enterprise Beans subsystem suspension complete
+2026-11-18 12:08:17,301 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-5) WFLYJCA0005: Deploying non-JDBC-compliant driver class org.postgresql.Driver (version 42.7)
+2026-11-18 12:08:17,366 INFO  [org.jboss.weld.Version] (MSC service thread 1-5) WELD-000900: 6.0.4 (Final)
+2026-11-18 12:08:17,505 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-2) WFLYJCA0018: Started Driver service with driver-name = ROOT.war_org.postgresql.Driver_42_7
+2026-11-18 12:08:17,580 INFO  [org.jboss.as.ejb3] (MSC service thread 1-2) WFLYEJB0042: Started message driven bean 'ChatMessageMDB' with 'activemq-ra.rar' resource adapter
+2026-11-18 12:08:17,733 INFO  [org.jboss.as.jpa] (ServerService Thread Pool -- 52) WFLYJPA0010: Starting Persistence Unit (phase 2 of 2) Service 'ROOT.war#minichatPU'
+2026-11-18 12:08:17,762 WARN  [org.hibernate.orm.connections.pooling] (ServerService Thread Pool -- 52) HHH10001002: Using built-in connection pool (not intended for production use)
+2026-11-18 12:08:18,742 INFO  [org.hibernate.orm.connections.pooling] (ServerService Thread Pool -- 52) HHH10001005: Database info:
+	Database JDBC URL [jdbc:postgresql://aws-1-eu-west-1.pooler.supabase.com:5432/postgres]
+	Database driver: PostgreSQL JDBC Driver
+	Database dialect: PostgreSQLDialect
+	Database version: 17.12
+	Default catalog/schema: postgres/public
+	Autocommit mode: false
+	Isolation level: READ_COMMITTED
+	JDBC fetch size: none
+	Pool: DriverManagerConnectionProvider
+	Minimum pool size: 1
+	Maximum pool size: 20
+2026-11-18 12:08:21,317 INFO  [io.undertow.websockets.jsr] (ServerService Thread Pool -- 52) UT026003: Adding annotated server endpoint class org.wildfly.examples.ChatEndpoint for path /chat
+2026-11-18 12:08:21,873 INFO  [org.jboss.resteasy.resteasy_jaxrs.i18n] (ServerService Thread Pool -- 52) RESTEASY002225: Deploying jakarta.ws.rs.core.Application: class org.wildfly.examples.GettingStartedApplication
+2026-11-18 12:08:21,945 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 52) WFLYUT0021: Registered web context: '/' for server 'default-server'
+2026-11-18 12:08:21,970 INFO  [org.jboss.as.server] (ServerService Thread Pool -- 31) WFLYSRV0010: Deployed "ROOT.war" (runtime-name : "ROOT.war")
+2026-11-18 12:08:22,067 INFO  [org.jboss.as.server] (Controller Boot Thread) WFLYSRV0212: Resuming server
+2026-11-18 12:08:22,085 INFO  [org.jboss.as] (Controller Boot Thread) WFLYSRV0060: Http management interface listening on http://127.0.0.1:9990/management
+2026-11-18 12:08:22,085 INFO  [org.jboss.as] (Controller Boot Thread) WFLYSRV0054: Admin console is not enabled
+2026-11-18 12:08:22,086 INFO  [org.jboss.as] (Controller Boot Thread) WFLYSRV0025: WildFly 42.0.0.Final (WildFly Core 34.0.0.Final) started in 15071ms - Started 415 of 554 services (299 services are lazy, passive or on-demand) - Server configuration file in use: standalone.xml - Minimum feature stability level: community
+2026-11-18 12:08:22,397 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-2) WFLYJCA0019: Stopped Driver service with driver-name = ROOT.war_org.postgresql.Driver_42_7
+2026-11-18 12:08:22,399 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 3) WFLYUT0022: Unregistered web context: '/' from server 'default-server'
+2026-11-18 12:08:22,600 INFO  [org.wildfly.extension.messaging-activemq] (MSC service thread 1-2) WFLYMSGAMQ0006: Unbound messaging object to jndi name java:/jms/topic/ChatTopic
+2026-11-18 12:08:22,601 INFO  [org.jboss.as.jpa] (ServerService Thread Pool -- 17) WFLYJPA0011: Stopping Persistence Unit (phase 2 of 2) Service 'ROOT.war#minichatPU'
+2026-11-18 12:08:22,644 INFO  [org.jboss.as.jpa] (ServerService Thread Pool -- 17) WFLYJPA0011: Stopping Persistence Unit (phase 1 of 2) Service 'ROOT.war#minichatPU'
+2026-11-18 12:08:22,679 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-3) WFLYSRV0028: Stopped deployment ROOT.war (runtime-name: ROOT.war) in 284ms
+2026-11-18 12:08:22,703 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-4) WFLYSRV0027: Starting deployment of "ROOT.war" (runtime-name: "ROOT.war")
+2026-11-18 12:08:23,235 INFO  [org.jboss.as.jpa] (MSC service thread 1-5) WFLYJPA0002: Read persistence.xml for minichatPU
+2026-11-18 12:08:23,263 INFO  [org.jipijapa] (MSC service thread 1-5) JIPIORMV7020260: Second level cache enabled for ROOT.war#minichatPU
+2026-11-18 12:08:23,266 INFO  [org.jboss.as.jpa] (ServerService Thread Pool -- 17) WFLYJPA0010: Starting Persistence Unit (phase 1 of 2) Service 'ROOT.war#minichatPU'
+2026-11-18 12:08:23,266 INFO  [org.hibernate.orm.jpa] (ServerService Thread Pool -- 17) HHH008540: Processing PersistenceUnitInfo [name: minichatPU]
+2026-11-18 12:08:23,269 INFO  [org.jboss.weld.deployer] (MSC service thread 1-2) WFLYWELD0003: Processing weld deployment ROOT.war
+2026-11-18 12:08:23,289 INFO  [org.hibernate.orm.cache] (ServerService Thread Pool -- 17) HHH90001028: Second-level cache region factory [org.infinispan.hibernate.cache.v6.InfinispanRegionFactory]
+2026-11-18 12:08:23,317 INFO  [org.hibernate.envers.boot.internal.EnversServiceImpl] (ServerService Thread Pool -- 17) Envers integration enabled? : true
+2026-11-18 12:08:23,372 INFO  [org.wildfly.extension.messaging-activemq] (MSC service thread 1-3) WFLYMSGAMQ0002: Bound messaging object to jndi name java:/jms/topic/ChatTopic
+2026-11-18 12:08:23,373 INFO  [org.jipijapa] (MSC service thread 1-4) JIPIORMV7020260: Second level cache enabled for ROOT.war#minichatPU
+2026-11-18 12:08:23,384 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-4) WFLYJCA0005: Deploying non-JDBC-compliant driver class org.postgresql.Driver (version 42.7)
+2026-11-18 12:08:23,443 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-2) WFLYJCA0018: Started Driver service with driver-name = ROOT.war_org.postgresql.Driver_42_7
+2026-11-18 12:08:23,446 INFO  [org.jboss.as.ejb3] (MSC service thread 1-3) WFLYEJB0042: Started message driven bean 'ChatMessageMDB' with 'activemq-ra.rar' resource adapter
+2026-11-18 12:08:23,453 INFO  [org.jboss.as.jpa] (ServerService Thread Pool -- 17) WFLYJPA0010: Starting Persistence Unit (phase 2 of 2) Service 'ROOT.war#minichatPU'
+2026-11-18 12:08:23,455 WARN  [org.hibernate.orm.connections.pooling] (ServerService Thread Pool -- 17) HHH10001002: Using built-in connection pool (not intended for production use)
+2026-11-18 12:08:24,063 INFO  [org.hibernate.orm.connections.pooling] (ServerService Thread Pool -- 17) HHH10001005: Database info:
+	Database JDBC URL [jdbc:postgresql://aws-1-eu-west-1.pooler.supabase.com:5432/postgres]
+	Database driver: PostgreSQL JDBC Driver
+	Database dialect: PostgreSQLDialect
+	Database version: 17.12
+	Default catalog/schema: postgres/public
+	Autocommit mode: false
+	Isolation level: READ_COMMITTED
+	JDBC fetch size: none
+	Pool: DriverManagerConnectionProvider
+	Minimum pool size: 1
+	Maximum pool size: 20
+2026-11-18 12:08:24,477 INFO  [io.undertow.websockets.jsr] (ServerService Thread Pool -- 17) UT026003: Adding annotated server endpoint class org.wildfly.examples.ChatEndpoint for path /chat
+2026-11-18 12:08:24,562 INFO  [org.jboss.resteasy.resteasy_jaxrs.i18n] (ServerService Thread Pool -- 17) RESTEASY002225: Deploying jakarta.ws.rs.core.Application: class org.wildfly.examples.GettingStartedApplication
+2026-11-18 12:08:24,574 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 17) WFLYUT0021: Registered web context: '/' for server 'default-server'
+2026-11-18 12:08:24,630 INFO  [org.jboss.as.server] (management-handler-thread - 2) WFLYSRV0016: Replaced deployment "ROOT.war" with deployment "ROOT.war"
+2026-11-18 12:09:11,544 INFO  [stdout] (default task-2) Hibernate: select u1_0.id,u1_0.password,u1_0.username from users u1_0 where u1_0.username=?
+2026-11-18 12:09:13,244 INFO  [stdout] (default task-2) Hibernate: select m1_0.id,m1_0.content,m1_0.sender,m1_0.timestamp from messages m1_0 order by m1_0.id desc fetch first ? rows only
+2026-11-18 12:09:23,130 INFO  [stdout] (Thread-5 (activemq-client-global)) JMS received: mazen1: jms
+2026-11-18 12:09:23,152 INFO  [stdout] (Thread-5 (activemq-client-global)) Hibernate: insert into messages (content,sender,timestamp) values (?,?,?)

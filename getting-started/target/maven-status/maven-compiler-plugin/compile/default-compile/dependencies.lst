@@ -1,0 +1,14 @@
+classpath:/home/codespace/.m2/repository/jakarta/enterprise/jakarta.enterprise.cdi-api/4.1.0/jakarta.enterprise.cdi-api-4.1.0.jar	159576:1709834557000
+classpath:/home/codespace/.m2/repository/jakarta/enterprise/jakarta.enterprise.lang-model/4.1.0/jakarta.enterprise.lang-model-4.1.0.jar	27518:1709834560000
+classpath:/home/codespace/.m2/repository/jakarta/el/jakarta.el-api/6.0.0/jakarta.el-api-6.0.0.jar	93349:1709219280000
+classpath:/home/codespace/.m2/repository/jakarta/interceptor/jakarta.interceptor-api/2.2.0/jakarta.interceptor-api-2.2.0.jar	24005:1708545830000
+classpath:/home/codespace/.m2/repository/jakarta/inject/jakarta.inject-api/2.0.1/jakarta.inject-api-2.0.1.jar	10681:1634410593000
+classpath:/home/codespace/.m2/repository/jakarta/ws/rs/jakarta.ws.rs-api/4.0.0/jakarta.ws.rs-api-4.0.0.jar	153929:1712068403000
+classpath:/home/codespace/.m2/repository/jakarta/persistence/jakarta.persistence-api/3.2.0/jakarta.persistence-api-3.2.0.jar	195939:1712739547000
+classpath:/home/codespace/.m2/repository/jakarta/transaction/jakarta.transaction-api/2.0.1/jakarta.transaction-api-2.0.1.jar	28607:1648723059000
+classpath:/home/codespace/.m2/repository/jakarta/websocket/jakarta.websocket-api/2.1.1/jakarta.websocket-api-2.1.1.jar	23856:1686582825000
+classpath:/home/codespace/.m2/repository/jakarta/websocket/jakarta.websocket-client-api/2.1.1/jakarta.websocket-client-api-2.1.1.jar	42635:1686582826000
+classpath:/home/codespace/.m2/repository/jakarta/jms/jakarta.jms-api/3.1.0/jakarta.jms-api-3.1.0.jar	58964:1646145683000
+classpath:/home/codespace/.m2/repository/jakarta/ejb/jakarta.ejb-api/4.0.1/jakarta.ejb-api-4.0.1.jar	61812:1651625504000
+classpath:/home/codespace/.m2/repository/jakarta/annotation/jakarta.annotation-api/3.0.0/jakarta.annotation-api-3.0.0.jar	26378:1708008216000
+classpath:/home/codespace/.m2/repository/org/postgresql/postgresql/42.7.2/postgresql-42.7.2.jar	1089136:1708442578000

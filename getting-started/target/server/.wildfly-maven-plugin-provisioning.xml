@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<installation xmlns="urn:jboss:galleon:provisioning:4.0">
+    <feature-pack location="org.wildfly:wildfly-galleon-pack:42.0.0.Final">
+        <default-configs inherit="false"/>
+        <packages inherit="false"/>
+    </feature-pack>
+    <config model="standalone" name="standalone.xml">
+        <layers>
+            <include name="ee-core-profile-server"/>
+            <include name="jpa"/>
+            <include name="jaxrs"/>
+            <include name="ejb"/>
+            <include name="embedded-activemq"/>
+        </layers>
+    </config>
+    <options>
+        <option name="optional-packages" value="passive+"/>
+    </options>
+</installation>
